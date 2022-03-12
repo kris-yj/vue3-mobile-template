@@ -21,6 +21,15 @@
     "url": "https://github.com/kris-yj/vue3-mobile-template/issues"
   },
   "homepage": "https://github.com/kris-yj/vue3-mobile-template#readme",
+  "lint-staged": {
+    "src/**/*.{vue,js,jsx,ts,tsx,css,scss,less,postcss,json}": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "axios": "^0.26.1",
     "crypto-js": "^4.1.1",
