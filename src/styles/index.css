@@ -1,5 +1,10 @@
 @import 'vant/lib/index.css';
 
+/* 全局样式变量覆盖 */
+:root {
+	/* --van-button-primary-background-color: red; */
+}
+
 /* 全局CSS */
 * {
 	-webkit-touch-callout: none;
